@@ -1,0 +1,104 @@
+.mail-content {
+    color: #2f5a28;
+    font: solid;
+    border: 3px #2f5a28 solid;
+    border-radius: 20px;
+    justify-content: center;
+
+    .mail-left {
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+        flex-direction: column;
+        padding-left: 10px;
+        padding-top: 20px;
+    }
+}
+
+.mail-word {
+    display: flex;
+    justify-content: flex-start;
+    margin-bottom: 10px;
+
+    h5 {
+        display: inline-block;
+    }
+
+    p {
+        display: inline-block;
+        color: rgb(231, 139, 33);
+        font-weight: bold;
+    }
+
+    input {
+        border: 2px #2f5a28 solid;
+        border-radius: 15px;
+        padding-left: 10px;
+        margin: 0 10px;
+        background-color: #f6f9f4;
+        height: 35px;
+        width: 300px;
+    }
+
+}
+
+.mail-site {
+    display: flex;
+    justify-content: flex-start;
+    padding-bottom: 20px;
+    padding-left: 20px;
+
+    textarea {
+        width: 500px;
+        height: 100px;
+    }
+
+}
+
+// 送出按鈕
+.mail-send {
+    display: flex;
+    align-items: stretch;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 10px;
+
+    button {
+        height: 30px;
+        background-color: #2f5a28;
+        color: white;
+        border-radius: 10px;
+    }
+}
+
+// 翻轉方式
+.front {
+    position: relative;
+}
+
+.back {
+    background: #2f5a28;
+    color: white;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 999;
+    bottom: 0;
+    left: 0;
+    border-radius: 15px;
+
+    .mail-success {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 450px;
+    }
+}
+
+@media (max-width: 576px) {
+    .mail-send {
+        input {
+            width: auto;
+        }
+    }
+}
